@@ -153,7 +153,7 @@ for col in df_consolidado.columns:
 
 # ===================== Buscar ID da planilha no Google Drive =====================
 folder_id = "1ePdiJo3o2Lr0cukI9Gj8v2fvQjFYT7rF"
-sheet_name = "Financeiro_contas_a_receber_JM"
+sheet_name = "Financeiro_contas_a_receber_BFLTech"
 
 query = f"name='{sheet_name}' and mimeType='application/vnd.google-apps.spreadsheet' and '{folder_id}' in parents and trashed=false"
 results = drive_service.files().list(q=query, spaces='drive', fields="files(id, name)").execute()
