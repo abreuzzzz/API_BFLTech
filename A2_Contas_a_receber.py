@@ -18,7 +18,7 @@ sheets_service = build("sheets", "v4", credentials=credentials)
 # ===================== Configurações =====================
 export_url = "https://services.contaazul.com/finance-pro-reports/v1/financial-statement-view/export"
 headers = {
-    'x-authorization': 'b25cc2ec-b17a-49c6-889c-512818a39989',
+    'x-authorization': '5e62dd4d-6969-4c4e-a026-4630b7db9768',
     'Content-Type': 'application/json',
     'User-Agent': 'Mozilla/5.0'
 }
@@ -152,7 +152,7 @@ for col in df_consolidado.columns:
     print(f"  ✅ Coluna '{col}' convertida para string")
 
 # ===================== Buscar ID da planilha no Google Drive =====================
-folder_id = "1ePdiJo3o2Lr0cukI9Gj8v2fvQjFYT7rF"
+folder_id = "1SoGQuSwm-GqyeGunT24h0QfqoLYeEFfu"
 sheet_name = "Financeiro_contas_a_receber_BFLTech"
 
 query = f"name='{sheet_name}' and mimeType='application/vnd.google-apps.spreadsheet' and '{folder_id}' in parents and trashed=false"
